@@ -1,0 +1,58 @@
+.formTodo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    border: 1px solid rgba(255, 255, 255, .1);
+    border-radius: 4px;
+    transition: .4s ease-in-out;
+    background: #2f74c0;
+}
+
+.dragForm {
+    background: #02427a;
+    border-color: rgba(255, 255, 255, .3); 
+    box-shadow: 0 2px 8px 1px rgba(0, 0, 0, .18);
+}
+
+.formTodo:hover {
+    box-shadow: 0 2px 6px 2px rgba(0, 0, 0, .15);
+    transform: scale(1.03);
+}
+
+.formTodo > .check {
+    text-decoration: line-through 3px  orangered;
+}
+
+.formTodo > .editInput {
+    border-bottom: 2px dashed lightskyblue;
+    background: transparent;
+    color: inherit;
+    padding: 5px 8px;
+}
+
+.buttons {
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+    column-gap: 8px;
+}
+
+.buttons > span > svg {
+    font-size: 30px;
+    padding: 5px;
+}
+
+.buttons > span {
+    border-radius: 50%;
+    transition: .3s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    opacity: .6;
+}
+
+.buttons > span:hover {
+    opacity: 1;
+}

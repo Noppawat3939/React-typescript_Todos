@@ -1,0 +1,51 @@
+.todoList {
+    margin-top: 30px;
+}
+
+.container {
+    background: #02427a;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items:  flex-start;
+    border-radius: 4px;
+}
+
+.tasks {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    width: 45%;
+    height: max-content;
+    padding: 10px;
+    border: 1px solid;
+    border-radius: 4px;
+    text-align: center;
+    transition:  .3s ease-in-out;
+}
+
+.tasks.active {
+    border-color: #FFE59D;
+}
+
+.tasks.complete {
+    border-color: #82dbd8;
+}
+
+.active > h3 {
+    color:  #FEB139;
+    letter-spacing: 2px;
+}
+
+.complete > h3 {
+    color:  #00FFC6;
+    letter-spacing: 2px;
+}
+
+.dragActive {
+    border-width: 2.5px;
+}
+
+.dragComplete {
+    border-width: 2.5px;
+}
